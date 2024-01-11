@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Classifier for Drug Screening</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <style>
+        .unselectable {
+          -webkit-user-select: none;
+          -webkit-touch-callout: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+      </style>
+    <div class="container">
+        <h1>Image Classifier for Drug Screening</h1>
+        
+        <input type="text" id="main-directory" placeholder="Enter Main Directory Path">
+        <input type="text" id="destination-folder" placeholder="Enter Destination Folder Path">
+        <input type="text" id="experiment-name" placeholder="Name of Experiment">
+
+        <div class="unselectable" id="plate-grid"></div>
+
+        <button id="process-btn">Process Images</button>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

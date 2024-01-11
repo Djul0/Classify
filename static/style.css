@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+#plate-grid {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    gap: 5px;
+    margin-bottom:0 auto;
+}
+
+.well {
+    padding: 6px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.well.selected {
+    background-color: rgb(170, 255, 187);
+}
+
+input[type="text"] {
+    width: calc(50% - 10px);
+    padding: 10px;
+    margin: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
