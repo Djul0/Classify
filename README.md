@@ -1,5 +1,5 @@
 # Classify
-An app to classify images to perform time tracking with OrganoID in 384-wells (or less) plate 
+An app to classify images to perform time tracking with OrganoID in selected wells in 384-wells (or less) plate 
 
 <h1> step by step use</h1>
 
