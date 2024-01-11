@@ -4,7 +4,7 @@ An app to classify images to perform time tracking with OrganoID in 384-wells (o
 <h1> step by step use</h1>
 
 1) Download Visual studio code
-3) On VScode go to File > Open Folder and select the main folder (normaly named "Classify")
+3) On VScode go to File > Open Folder and select the main folder (normaly named "Classify-main")
 4) On the left panel select "app.py"
 5) run the code with the button on the top right (see picture)
 6) the code is running and you can click on the link in the therminal (http://127.0.0.1:5000)
