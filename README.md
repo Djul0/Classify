@@ -14,7 +14,7 @@ An app to classify images to perform time tracking with OrganoID in 384-wells (o
 
 8) put the directory of your main tracking folder containing all time points subfolders.
    ```
-      Main_Folder
+      Main_Tracking_Folder
       │
       ├── timepoint1
       │   └── NameOfTheExperiment_WellName_S1RandomStuff.tif
@@ -45,4 +45,5 @@ If no images are transfered this is maybe because of two possiblities:
     replace by :
    
     >pattern = f"{experiment_name}_{well}_s1.tif"
-   
+
+3) You can check if some errors are display. on the web broweser app right click and choose "Inspect". Select the console panel. here are displayed all errors. It's normal of some "uncaught (in promise) error" are display. other indication here might help you.
