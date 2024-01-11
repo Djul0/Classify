@@ -1,6 +1,6 @@
 # Classify
-An app to classify images to perform time tracking with OrganoID
-
+An app to classify images to perform time tracking with OrganoID in 384-wells (or less) plate 
+<h1> step by step use</h1>
 1) Download Visual studio code
 2) On VScode go to File > Open Folder and select the main folder (normaly named "Classify")
 3) On the left panel select "app.py"
@@ -10,9 +10,24 @@ An app to classify images to perform time tracking with OrganoID
 6) The app is now oppen into a browser (google chrome is recommanded).
 <img width="1137" alt="image" src="https://github.com/Djul0/Classify/assets/82659922/3c8a08ea-e96d-4fce-9f3f-8b28a41ce62d">
 7) put the directory of your main tracking folder containing all time points subfolders.
+8) Name of the brightfield images should be in this format:
+   NameOfTheExperiment_WellName_S1RandomStuff.tif
+   example: experiment1_B02_s15856CAB7-8F4D-4DE2-AEE3-B969B601B0F3.tif
+   Normaly the brightfield images we use already named correctly the files. you should also see other files than the "S1" like the "S2" files (ex: conf_B02_s227862CAC-3244-47FB-B3C8-BBEE9A6F67AA.tif) or the S1_thumb, S2_thumb (ex: conf_B02_s2_thumbCDAF1977-FBB1-476B-A626-1973C689677C.tif). these files wont be used but you can keep them in the main tracking folder.
+10) Put the output directory where the classify images will be transfered.
+11) Put the Name of the experiment which should match with the one in image names (in our example "experiment1".
+12) select the well you want to tracked . You can shift+click and drag to select multiple one.
+13) press the "process" button.
+14) Images should be correctly labelled in the ouput directory you put previously.
 
-8) 
+<h1> Troubleshooting</h1>
+If no images are transfered this is maybe because of two possiblity:
+  1) the given experiment name doesnt match the experiment images name. Name of the given experiment name and image experiment name should be in one word without special characteres(-,/,_) and no space.
+  2) Image Name pattern is not right. pattern of the name should be as mentionned: NameOfTheExperiment_WellName_S1RandomStuff.tif
+    a) If after the S1 you dont have random character/numbers (ex: experiment1_B02_s1.tif) this might also be a problem. 
+    => To solve this change the line 32 of the app.py. and remove the asterix "*" after S1.
+    >pattern = f"{experiment_name}_{well}_s1*.tif"
+    
+    
 
-Troubleshooting
-experiment name doesnt match
 name is not the same
