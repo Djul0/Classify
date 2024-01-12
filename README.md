@@ -9,7 +9,7 @@ An app to classify images to perform time tracking with OrganoID in selected wel
 5) Run the code with the button on the top right (see picture)
 6) The code is running and you can click on the link in the therminal (http://127.0.0.1:5000)
 ![At92-1 2](https://github.com/Djul0/Classify/assets/82659922/cf36e5a4-f937-4605-9ef7-e19cdc055f19)
-7) The app is now oppen into a browser (google chrome is recommanded).
+7) The app is now open into a browser (google chrome is recommanded).
 <img width="1137" alt="image" src="https://github.com/Djul0/Classify/assets/82659922/3c8a08ea-e96d-4fce-9f3f-8b28a41ce62d">
 
 8) put the directory of your main tracking folder containing all time points subfolders.
