@@ -46,4 +46,6 @@ If no images are transfeered, this is maybe because of two possibilities:
    
     >pattern = f"{experiment_name}_{well}_s1.tif"
 
-3) You can check if some errors are displayed. On the web browser app, right click and choose "Inspect". Select the console panel. Here are displayed all errors. It's normal to see some "uncaught (in promise) error" but everything else written here might help you.
+    Then save your document. You will have to stop the app by clicking in the terminal and pressing CTRL + C. after that you can run again the code, click on the link and test if it's working.
+   
+4) You can check if some errors are displayed. On the web browser app, right click and choose "Inspect". Select the console panel. Here are displayed all errors. It's normal to see some "uncaught (in promise) error" but everything else written here might help you.
